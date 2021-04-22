@@ -9,13 +9,17 @@ import Clock from './components/State';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import FunctionSetState from './components/FunctionSetState'
+import Counter from './components/Counter'
+import OnchangeEvent from './components/OnchangeEvent'
 
 //class component
 class App extends Component {
 render() {
   return (
     <div className="App">
-      <FunctionSetState />
+      <OnchangeEvent />
+      {/* <Counter /> */}
+      {/* <FunctionSetState /> */}
       {/* <ClassClick /> */}
       {/* <FunctionClick /> */}
      {/* <Dynamic></Dynamic> */}

@@ -1,19 +1,19 @@
-import react , {useState} from 'react'
+import react, { useState } from 'react'
 
-let FunctionSetState =(props) => {
+let FunctionSetState = () => {
     let [state, setState] = useState({
-        message : "Welcome"
+        message: "Welcome"
     })
-     const handleClick=()=>{
+    const handleClick = () => {
         alert("Thanks For Visiting")
         setState({
-            message : "Thank You for Visiting"
+            message: "Thank You for Visiting"
         })
     }
     return (
         <div>
-          {state.message}
-          <button onClick={handleClick}>Click me</button>
+            {state.message}
+            <button onClick={handleClick}>Click me</button>
         </div>
     )
 }
