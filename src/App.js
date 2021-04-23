@@ -8,20 +8,27 @@ import Dynamic from './components/Dynamic';
 import Clock from './components/State';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
-import FunctionSetState from './components/FunctionSetState'
-import Counter from './components/Counter'
-import OnchangeEvent from './components/OnchangeEvent'
-import ParentComponent from './components/ParentComponent'
-import HooksCount from './components/HooksCount'
-import HookCounter2 from './components/HookCounter2'
-import UseStateObject from './components/UseStateObject'
+import FunctionSetState from './components/FunctionSetState';
+import Counter from './components/Counter';
+import OnchangeEvent from './components/OnchangeEvent';
+import ParentComponent from './components/ParentComponent';
+import HooksCount from './components/HooksCount';
+import HookCounter2 from './components/HookCounter2';
+import UseStateObject from './components/UseStateObject';
+import UseStateArray from './components/UseStateArray';
+import UseStateInput from './components/UseStateInput';
+import UseEffect1 from './components/UseEffect1';
+import ConditionalRendering from './components/ConditionalRendering';
 
 //class component
 class App extends Component {
 render() {
   return (
     <div className="App">
-      <UseStateObject />
+      <ConditionalRendering />
+      {/* <UseEffect1 /> */}
+      {/* <UseStateArray /> */}
+      {/* <UseStateObject /> */}
       {/* <HookCounter2 /> */}
       {/* <HooksCount /> */}
        {/* <ParentComponent /> */}
