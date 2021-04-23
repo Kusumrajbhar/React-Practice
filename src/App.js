@@ -11,13 +11,21 @@ import ClassClick from './components/ClassClick';
 import FunctionSetState from './components/FunctionSetState'
 import Counter from './components/Counter'
 import OnchangeEvent from './components/OnchangeEvent'
+import ParentComponent from './components/ParentComponent'
+import HooksCount from './components/HooksCount'
+import HookCounter2 from './components/HookCounter2'
+import UseStateObject from './components/UseStateObject'
 
 //class component
 class App extends Component {
 render() {
   return (
     <div className="App">
-      <OnchangeEvent />
+      <UseStateObject />
+      {/* <HookCounter2 /> */}
+      {/* <HooksCount /> */}
+       {/* <ParentComponent /> */}
+      {/* <OnchangeEvent /> */}
       {/* <Counter /> */}
       {/* <FunctionSetState /> */}
       {/* <ClassClick /> */}
@@ -27,9 +35,9 @@ render() {
       {/* <Message></Message> */}
       {/* <Greet name="kusum" lastName="Rajbhar">   
         <p>I am children element</p>
-      </Greet>
-      <Greet name="Shraddha" lastName="Tendulkar" />
-      <Welcome name="Ashutosh" lastName="Sharangi">
+      </Greet> */}
+      {/* <Greet name="Shraddha" lastName="Tendulkar" /> */}
+      {/* <Welcome name="Ashutosh" lastName="Sharangi">
   </Welcome> */}
     </div>
   )

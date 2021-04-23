@@ -3,10 +3,11 @@ import React from 'react';
 function Greet(props) {
     console.log(props)
     //props.name = "shreya"
+    const {name, lastName, children} = props
     return (
     <>
-    <h1>I am functional Component of {props.name} {props.lastName}</h1>
-    <p>{props.children}</p>
+    <h1>I am functional Component of {name} {lastName}</h1>
+    <p>{children}</p>
     </>
     )
 }

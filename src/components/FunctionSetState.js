@@ -1,9 +1,10 @@
 import react, { useState } from 'react'
 
-let FunctionSetState = () => {
-    let [state, setState] = useState({
+const FunctionSetState = () => {
+    const [state, setState] = useState({
         message: "Welcome"
     })
+    
     const handleClick = () => {
         alert("Thanks For Visiting")
         setState({
@@ -12,7 +13,8 @@ let FunctionSetState = () => {
     }
     return (
         <div>
-            {state.message}
+            <br/>
+            {state.message}<br/><br/>
             <button onClick={handleClick}>Click me</button>
         </div>
     )
