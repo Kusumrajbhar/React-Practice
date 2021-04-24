@@ -2,9 +2,43 @@
   text-align: center;
 }
 
+.AppSecond {
+  text-align: center;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.primary {
+  color:red;
+}
+
+.font-xl {
+  font-size: 72px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:link{
+  color :green;
+}
+/* a:hover{
+  color: skyblue;
+  background-color: red;
+} */
+a:hover{
+  color: red;
+}
+a:active{
+  color:orange;
+}
+a:visited{
+  background: paleturquoise;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -37,7 +71,7 @@
   }
 }
 
-.Welcome {
+.welcome {
 background-color: red;
 height:30px;
 }
