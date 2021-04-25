@@ -13,7 +13,7 @@ function AppSecond() {
     //onst nameList =  names.map((name,index) => <h2 key={index}> {index} {name}</h2>)
     return (
         <div className="AppSecond">
-            <Pseudo />
+            {/* <Pseudo /> */}
             {/* <RadiumConcept /> */}
             {/* <CssFirst primary={false}/> */}
             {/* <ListOutputting names = {nameList} /> */}

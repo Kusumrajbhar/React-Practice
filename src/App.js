@@ -19,14 +19,18 @@ import UseStateArray from './components/UseStateArray';
 import UseStateInput from './components/UseStateInput';
 import UseEffect1 from './components/UseEffect1';
 import ConditionalRendering from './components/ConditionalRendering';
+import UseEffect2 from './components/UseEffect2';
+import UseEffect3 from './components/UseEffect3';
 
 //class component
 class App extends Component {
 render() {
   return (
     <div className="App">
-      {/* <ConditionalRendering /> */}
+      <UseEffect3 />
+      {/* <UseEffect2 /> */}
       {/* <UseEffect1 /> */}
+      {/* <ConditionalRendering /> */}
       {/* <UseStateArray /> */}
       {/* <UseStateObject /> */}
       {/* <HookCounter2 /> */}
