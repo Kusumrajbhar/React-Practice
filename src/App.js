@@ -21,13 +21,33 @@ import UseEffect1 from './components/UseEffect1';
 import ConditionalRendering from './components/ConditionalRendering';
 import UseEffect2 from './components/UseEffect2';
 import UseEffect3 from './components/UseEffect3';
+import MountingLifecycleA from './components/MountingLifecycleA'
+import MountingLifeCycleB from './components/MountingLifeCycleB'
+import ErrorHero from './components/ErrorHero';
+import ErrorBoundary2 from './components/ErrorBoundary2';
 
+// wrape all the components with error boundary else all component get hide
 //class component
 class App extends Component {
 render() {
   return (
     <div className="App">
-      <UseEffect3 />
+
+      {/* <ErrorBoundary2>
+      <ErrorHero heroName='Batman'/>
+      </ErrorBoundary2>
+
+      <ErrorBoundary2>
+      <ErrorHero heroName='Superman'/> 
+      </ErrorBoundary2>
+
+      // <ErrorBoundary2>
+      // <ErrorHero heroName='joker'/>
+      // </ErrorBoundary2> */}
+
+      {/* <MountingLifecycleA /> */}
+
+      {/* <UseEffect3 /> */}
       {/* <UseEffect2 /> */}
       {/* <UseEffect1 /> */}
       {/* <ConditionalRendering /> */}

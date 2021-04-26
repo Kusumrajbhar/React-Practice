@@ -75,3 +75,18 @@ a:visited{
 background-color: red;
 height:30px;
 }
+
+.movieList {
+  color: royalblue;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin:20px 0;
+}
+
+.modalBox {
+  border: royalblue;
+  border-radius: 50%;
+  border-width: 20px;
+}

@@ -8,9 +8,10 @@ const incrementCount = () => {
 }
 
 useEffect(() => {                     //useEffect runs after every render
-    document.title = `you clicked ${count} times`    //updating title after every render
+ document.title = `you clicked ${count} times`    //updating title after every render
+   console.log("useEffect")
 })
-
+console.log("count")
     return (
         <div>
             <button onClick={incrementCount}>Count : {count}</button>
