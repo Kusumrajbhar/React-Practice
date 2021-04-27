@@ -8,7 +8,7 @@ background: 'yellow'
 function Pseudo() {
     return (
         <div>
-            <p style={styles.error}>About Neosoft</p>
+            <p className={styles.error}>About Neosoft</p>
             <h1 style={pseudo}>
             <a href="www.google.com">Neosoft Technology</a>
             </h1>

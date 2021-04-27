@@ -26,6 +26,13 @@ export class MountingLifecycleA extends Component {
     document.title = `your name is ${this.state.name}` 
    }
 
+   shouldComponentUpdate(newProps, newState) {  //after making t false dimount and didiupdate will not triggered
+       console.log('shouldComponentUpdate() is Triggered')
+       console.log("newProps",newProps)
+       console.log("newState",newState)
+       return false
+   }
+
    changeState = () => {
        this.setState({
            name:'shraddha'

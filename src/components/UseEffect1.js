@@ -20,3 +20,7 @@ console.log("count")
 }
 
 export default UseEffect1
+
+//useEffect act similar to didmount changes after component renders
+//when count changes , useEffect runs after every change
+//if we put dependency it will become dependent on changes of that dependency i.e[count] 
