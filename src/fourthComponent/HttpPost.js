@@ -13,13 +13,13 @@ class HttpPost extends Component {
     }
 
     changeHandler = (e) => {
-    this.setState({[e.target.name] : e.target.value})
+    this.setState({[e.target.name] : e.target.value})  //set name with value
     }
 
     submitHandler = (e) => {
      e.preventDefault()    //to prevent page refresh
      console.log(this.state)     //whatever filled in input box consoled as a object
-     axios.post('https://jsonplaceholder.typicode.com/posts', this.state)
+     axios.post('https://jsonplaceholder.typicode.com/posts', this.state)  //this.state is the response value
      .then(response=>{
       console.log(response)
      })

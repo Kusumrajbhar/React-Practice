@@ -1,6 +1,8 @@
 import React from 'react'
 import {UserConsumer} from './UserContext'
 
+//wrape with consumer component
+
 function ContextC() {
     return (
        <UserConsumer> 

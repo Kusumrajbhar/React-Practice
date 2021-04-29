@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Input from './Input'
 
+//import input into it and use focusInput() 
 class FocusInput extends Component {
     constructor(props) {
         super(props)

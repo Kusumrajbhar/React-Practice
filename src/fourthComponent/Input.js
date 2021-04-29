@@ -5,10 +5,9 @@ class Input extends Component {
         super(props)
         this.inputRef = React.createRef() 
     }
-
-      
+    
     focusInput() {
-        this.inputRef.current.focus()
+        this.inputRef.current.focus()  //this function will be used in another component as a function
     }
     
     render() {

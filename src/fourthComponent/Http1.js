@@ -15,7 +15,7 @@ class Http1 extends Component {
         axios.get('https://jsonplaceholder.typicode.com/posts')
         .then(response=>{
          console.log(response)
-         this.setState({posts: response.data}) //in response getting more element bt choose only data
+         this.setState({posts: response.data}) //in response getting more elements bt choose only data
          console.log(this.state.posts[0].title)
         })
         .catch(error=>{
@@ -34,7 +34,8 @@ class Http1 extends Component {
                 }
                 { errorMsg ? <div>{errorMsg}</div> : null }
                 {/* {posts.length ? <div key={posts.id[2]}> {this.state.posts[0]} </div> : null} */}
-               {/* { console.log(posts.length)} */}
+               {/* { posts.length } */}
+               {/* {posts[0].title} */}
             </>
         )
     }

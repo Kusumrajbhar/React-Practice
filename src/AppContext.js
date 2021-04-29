@@ -3,13 +3,14 @@ import './App.css'
 import ContextA from './contextComponent/ContextA'
 import {UserProvider} from './contextComponent/UserContext'
 
+//wrape with provider component
+
 function AppContext() {
     return (
         <div className="App">
-            {/* <UserProvider  value="kusum"> */}
+            {/* <UserProvider  value="kusum">   
                 <ContextA />
-            {/* </UserProvider>
-             */}
+            </UserProvider>         */}
         </div>
     )
 }
