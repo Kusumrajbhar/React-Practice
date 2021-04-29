@@ -5,12 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AppSecond from './AppSecond'
 import AppThird from './AppThird'
+import AppFourth from './AppFourth'
+import AppContext from './AppContext'
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
     <AppSecond />
     <AppThird /> 
+    <AppFourth />
+    <AppContext />
   </React.StrictMode>,
   document.getElementById('root')
 );

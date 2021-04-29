@@ -9,7 +9,7 @@ class AppThird extends Component {
     render() {
         return (
             <div className="App">
-            <ParentComp />    
+            {/* <ParentComp />     */}
             {/* <HigherOrder1 name='kusum'/>
             <HigherOrder2 name='shraddha'/>  */}
             </div>
