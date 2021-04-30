@@ -12,10 +12,12 @@ export class ApiTaskget extends Component {
         }
     }
 
+    //Get User Comment
     getCommentList = () => {
         axios.get('https://jsonplaceholder.typicode.com/comments')
             .then(response => {
-                this.setState({ comments: response.data })
+                this.setState({ comments: response.data,
+                  })
                 console.log('response', response)
                 console.log('response', this.state.comments[0].name)
             })
@@ -37,6 +39,8 @@ export class ApiTaskget extends Component {
     //         })
     // }
 
+
+    //Delete User Comment
     deleteHandler = (id) => {
         fetch(`https://jsonplaceholder.typicode.com/comments/${id}`, {
             method: 'DELETE'
@@ -49,6 +53,7 @@ export class ApiTaskget extends Component {
         })
     }
 
+    //Post User Comment
     changeHandler = (e) => {
         this.setState({
             [e.target.name]: e.target.value
@@ -66,12 +71,6 @@ export class ApiTaskget extends Component {
                 console.log(error)
             })
     }
-
-    // changeHandler = (e) => {
-    //     this.setState({
-    //         [e.target.name]: e.target.value
-    //     })
-    //    }
 
     render() {
         const { comments, name } = this.state
