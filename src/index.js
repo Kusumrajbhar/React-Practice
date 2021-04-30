@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom'; 
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals'
 import AppSecond from './AppSecond'
 import AppThird from './AppThird'
 import AppFourth from './AppFourth'
 import AppContext from './AppContext'
+import AppApichallenge from './AppApiChallenge'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
     <AppThird /> 
     <AppFourth />
     <AppContext />
+    <AppApichallenge />
   </React.StrictMode>,
   document.getElementById('root')
 );

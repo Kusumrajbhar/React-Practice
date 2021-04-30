@@ -1,5 +1,5 @@
-//import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, {Component} from 'react';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome';
@@ -25,6 +25,7 @@ import MountingLifecycleA from './components/MountingLifecycleA'
 import MountingLifeCycleB from './components/MountingLifeCycleB'
 import ErrorHero from './components/ErrorHero';
 import ErrorBoundary2 from './components/ErrorBoundary2';
+import ApiTaskget from './apiChallenge/ApiTaskget'
 
 // wrape all the components with error boundary else all component get hide
 //class component
@@ -32,6 +33,8 @@ class App extends Component {
 render() {
   return (
     <div className="App">
+      
+      <ApiTaskget />
 
       {/* <ErrorBoundary2>
       <ErrorHero heroName='Batman'/>

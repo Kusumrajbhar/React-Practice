@@ -51,3 +51,13 @@ class HttpPost extends Component {
 }
 
 export default HttpPost
+
+
+//[e.target.name] : e.target.value -- name field is target by e.target.name and set by the value 
+// e.target.value(which is get by handler which access the value changed in input box) 
+//initially     myId : '',
+           // myTitle : '',   ---initially empty
+           // body : ''
+// this.setState({[e.target.name] : e.target.value})  -- this is used to set the value enter by user
+
+
