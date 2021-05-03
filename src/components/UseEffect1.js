@@ -6,7 +6,7 @@ const [count, setCount] = useState(0)
 const incrementCount = () => {
     setCount(count + 1)
 }
-
+//useEffect have 2 parameters 1-callback function and 2-dependency
 useEffect(() => {                     //useEffect runs after every render
  document.title = `you clicked ${count} times`    //updating title after every render
    console.log("useEffect")

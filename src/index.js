@@ -8,12 +8,23 @@ import AppThird from './AppThird'
 import AppFourth from './AppFourth'
 import AppContext from './AppContext'
 import AppApichallenge from './AppApiChallenge'
+import AppTest from './AppTest'
+import {BrowserRouter} from 'react-router-dom' 
+import SidebarExample from './components/SideBar';
 
 ReactDOM.render(
   <React.StrictMode>
+
+    <BrowserRouter>
     <App />
+    <AppThird />
+    </BrowserRouter>
+    
+    {/* <SidebarExample /> */}
+
+    <AppTest />
     <AppSecond />
-    <AppThird /> 
+
     <AppFourth />
     <AppContext />
     <AppApichallenge />

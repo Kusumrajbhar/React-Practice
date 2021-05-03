@@ -26,6 +26,10 @@ import MountingLifeCycleB from './components/MountingLifeCycleB'
 import ErrorHero from './components/ErrorHero';
 import ErrorBoundary2 from './components/ErrorBoundary2';
 import ApiTaskget from './apiChallenge/ApiTaskget'
+//import sideBar from './components/SideBar'
+import { Route, Switch } from 'react-router-dom'
+import Navigation from './components/Navigation';
+import HookHistory from './components/HookHistory';
 
 // wrape all the components with error boundary else all component get hide
 //class component
@@ -33,8 +37,18 @@ class App extends Component {
 render() {
   return (
     <div className="App">
+
+      {/* <Navigation /><br/> */}
+
+      <Switch>
+      {/* <HookHistory /> */}
+       <Route exact path = '/counter' component={(props)=>(<Counter notify='this is the Counter implementation' {...props}/>)} />
+       <Route exact path = '/welcome' component={Welcome} />
+       <Route exact path = '/greet' component={Greet} />
+       <Route exact path = '/history1' component={HookHistory} />
+      </Switch>
       
-      <ApiTaskget />
+      {/* <ApiTaskget /> */}
 
       {/* <ErrorBoundary2>
       <ErrorHero heroName='Batman'/>
@@ -44,9 +58,9 @@ render() {
       <ErrorHero heroName='Superman'/> 
       </ErrorBoundary2>
 
-      // <ErrorBoundary2>
-      // <ErrorHero heroName='joker'/>
-      // </ErrorBoundary2> */}
+      <ErrorBoundary2>
+      <ErrorHero heroName='joker'/>
+      </ErrorBoundary2> */}
 
       {/* <MountingLifecycleA /> */}
 
@@ -71,8 +85,8 @@ render() {
         <p>I am children element</p>
       </Greet> */}
       {/* <Greet name="Shraddha" lastName="Tendulkar" /> */}
-      {/* <Welcome name="Ashutosh" lastName="Sharangi">
-  </Welcome> */}
+      {/* <Welcome name="Ashutosh" lastName="Sharangi" /> */}
+      
     </div>
   )
 }

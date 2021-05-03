@@ -11,7 +11,7 @@ import Home from './secondComponent/Home'
 
 function AppSecond() {
     //const names = ["kusum", "Shraddha", "Siddhi"];
-    //onst nameList =  names.map((name,index) => <h2 key={index}> {index} {name}</h2>)
+    //const nameList =  names.map((name,index) => <h2 key={index}> {index} {name}</h2>)
     return (
         <div className="AppSecond">
             {/* <Home /> */}

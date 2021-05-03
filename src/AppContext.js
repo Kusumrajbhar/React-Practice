@@ -8,7 +8,7 @@ import {UserProvider} from './contextComponent/UserContext'
 function AppContext() {
     return (
         <div className="App">
-            {/* <UserProvider  value="kusum">   
+            {/* <UserProvider value='welcome'>   
                 <ContextA />
             </UserProvider>         */}
         </div>

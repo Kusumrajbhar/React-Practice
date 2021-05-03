@@ -19,12 +19,13 @@ class HigherOrder1 extends Component {
 
     render() {
         //using props from higherOrder3 component
-        const {count, incrementCount} = this.props   //destructuring
+        const {count, incrementCount, title} = this.props   //destructuring
         //const { count } = this.state   //destructuring
          return (
             <div>
                {/* <button onClick={this.incrementCount}>{this.props.name} clicked {count} times</button>  */}
-               <button onClick={incrementCount}>{this.props.name} clicked {count} times</button> 
+               <button onClick={incrementCount}>{this.props.name} clicked {count} times</button> <br/>
+               {title}
             </div>
         )
     }

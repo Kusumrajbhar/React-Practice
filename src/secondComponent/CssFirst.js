@@ -2,7 +2,7 @@ import React from 'react'
 //import styles from '../../src/ModuleCss.modole.css'  - way to import 
 //stylesheet.module.css - can access only locally not globally
 //normal .css can access globally 
- //'<h1 style={styles.success}>inline<h1/>'  success is className
+ //'<h1 className={styles.success}>inline<h1/>'  success is className
 
 const paragraph = {
     fontsize: '50px',

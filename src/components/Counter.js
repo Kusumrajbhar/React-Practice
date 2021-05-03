@@ -34,7 +34,8 @@ class Counter extends Component {
         return (
             <div>
                 Count - {this.state.count}<br/>
-                <button onClick={()=>this.incrementThree()}>Increment</button>
+                <button onClick={()=>this.incrementThree()}>Increment</button><br/>
+                {this.props.notify}
             </div>
         )
     }

@@ -10,14 +10,17 @@ class ErrorBoundary2 extends Component {
     }
 
     static getDerivedStateFromError(error) {   //to throw the error
+      console.log('getDerivedStateFromError',error)
         return {
             hasError: true
         }
     }
      
+    //this is used to log the error only
     componentDidCatch(error, info) {       //to log the error
-      console.log('error')
-      console.log('info')
+        console.log('didCatch')
+        console.log('error',error )  //check in console 
+      console.log('info',info)
     }
     
     render() {
