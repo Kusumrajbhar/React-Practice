@@ -16,7 +16,6 @@ import HooksCount from './components/HooksCount';
 import HookCounter2 from './components/HookCounter2';
 import UseStateObject from './components/UseStateObject';
 import UseStateArray from './components/UseStateArray';
-import UseStateInput from './components/UseStateInput';
 import UseEffect1 from './components/UseEffect1';
 import ConditionalRendering from './components/ConditionalRendering';
 import UseEffect2 from './components/UseEffect2';
@@ -30,6 +29,9 @@ import ApiTaskget from './apiChallenge/ApiTaskget'
 import { Route, Switch } from 'react-router-dom'
 import Navigation from './components/Navigation';
 import HookHistory from './components/HookHistory';
+import UseReducer from './Reducer/UseReducer';
+import ObjectReducer from './Reducer/ObjectReducer'
+import MultipleUseReducer from './Reducer/MultipleUseReducer';
 
 // wrape all the components with error boundary else all component get hide
 //class component
@@ -81,6 +83,9 @@ render() {
      {/* <Dynamic></Dynamic> */}
      {/* <Clock date={new Date().toLocaleTimeString()} /> */}
       {/* <Message></Message> */}
+      {/* <UseReducer /> */}
+      {/* <ObjectReducer /> */}
+      <MultipleUseReducer />
       {/* <Greet name="kusum" lastName="Rajbhar">   
         <p>I am children element</p>
       </Greet> */}

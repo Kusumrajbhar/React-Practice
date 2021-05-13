@@ -4,11 +4,13 @@ import {UserConsumer} from './UserContext'
 //wrape with consumer component
 
 function ContextC() {
+  
     return (
        <UserConsumer> 
            {
              (username) => {
-               return <div>Hello {username}</div>
+               {console.log('value',username())}
+               return <div>Hello {username()}</div>
              }
            }
        </UserConsumer>
