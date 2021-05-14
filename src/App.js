@@ -32,6 +32,11 @@ import HookHistory from './components/HookHistory';
 import UseReducer from './Reducer/UseReducer';
 import ObjectReducer from './Reducer/ObjectReducer'
 import MultipleUseReducer from './Reducer/MultipleUseReducer';
+import EffectTitleOne from './customeHook/EffectTitleOne';
+import EffecttitleTwo from './customeHook/EffecttitleTwo';
+import CounterOne from './customeHook/CounterOne';
+import CounterTwo from './customeHook/CounterTwo';
+import Form from './customeHook/Form';
 
 // wrape all the components with error boundary else all component get hide
 //class component
@@ -49,7 +54,18 @@ render() {
        <Route exact path = '/greet' component={Greet} />
        <Route exact path = '/history1' component={HookHistory} />
       </Switch>
+
+      <Form />
       
+      {/* <CounterOne /> */}
+      {/* <CounterTwo /> */}
+
+      {/* <EffectTitleOne /> */}
+      {/* <EffecttitleTwo /> */}
+      
+      {/* <UseReducer /> */}
+      {/* <ObjectReducer /> */}
+      {/* <MultipleUseReducer /> */}
       {/* <ApiTaskget /> */}
 
       {/* <ErrorBoundary2>
@@ -83,9 +99,6 @@ render() {
      {/* <Dynamic></Dynamic> */}
      {/* <Clock date={new Date().toLocaleTimeString()} /> */}
       {/* <Message></Message> */}
-      {/* <UseReducer /> */}
-      {/* <ObjectReducer /> */}
-      <MultipleUseReducer />
       {/* <Greet name="kusum" lastName="Rajbhar">   
         <p>I am children element</p>
       </Greet> */}
