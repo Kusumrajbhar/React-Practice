@@ -1,0 +1,29 @@
+body {
+  color: red;
+}
+
+.heading {
+  font-size: 6rem;
+}
+
+.para {
+  font-size: 4rem;
+}
+
+@media (orientation: portrait) {
+  .heading {
+    color: cyan;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    color: blue;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    color: salmon;
+  }
+}
