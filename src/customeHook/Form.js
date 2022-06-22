@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FormCustom from "./FormCustom";
+import "./styles.less";
 
 function Form() {
  const [firstName, bindFirstName, resetFirstName] = FormCustom('')
@@ -7,23 +8,31 @@ function Form() {
 
   const submitHandler = (e) => {
     e.preventDefault()
-    alert(`Hii ${firstName} ${lastName}`);
+    if (firstName || lastName) {
+      alert(`Hii ${firstName} ${lastName}`);
+    }
     resetFirstName()    //to reset the value
     resetLastName()
   };
   return (
     <div>
+      <h1 className="formHeader">Fill the below Form</h1>
       <form onSubmit={submitHandler}>
+        <div>
         <input
           placeholder="firstname"
          {...bindFirstName}
         />
+        </div>
         <br />
+        <div>
         <input
           placeholder="lastname"
         {...bindLastName}
         />
-        <input type="submit" />
+        </div>
+        <br />
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
