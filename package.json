@@ -7,7 +7,12 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
+<<<<<<< HEAD
     "bootstrap": "^5.1.3",
+=======
+    "bootstrap": "^5.0.0",
+    "less": "^4.1.2",
+>>>>>>> f6b77eafa33390730db6c07098ae9ff59b11c50b
     "radium": "^0.26.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.0",
