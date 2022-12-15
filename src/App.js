@@ -37,6 +37,7 @@ import EffecttitleTwo from './customeHook/EffecttitleTwo';
 import CounterOne from './customeHook/CounterOne';
 import CounterTwo from './customeHook/CounterTwo';
 import Form from './customeHook/Form';
+import UseEffect from './customeHook/UseEffect';
 
 // wrape all the components with error boundary else all component get hide
 //class component
@@ -56,7 +57,7 @@ render() {
       </Switch>
 
       <Form />
-      
+      {/* <UseEffect /> */}
       {/* <CounterOne /> */}
       {/* <CounterTwo /> */}
 
@@ -91,7 +92,7 @@ render() {
       {/* <HookCounter2 /> */}
       {/* <HooksCount /> */}
        {/* <ParentComponent /> */}
-      {/* <OnchangeEvent /> */}
+    <OnchangeEvent /> 
       {/* <Counter /> */}
       {/* <FunctionSetState /> */}
       {/* <ClassClick /> */}
@@ -103,7 +104,7 @@ render() {
         <p>I am children element</p>
       </Greet> */}
       {/* <Greet name="Shraddha" lastName="Tendulkar" /> */}
-      {/* <Welcome name="Ashutosh" lastName="Sharangi" /> */}
+       {/* <Welcome name="Ashutosh" lastName="Sharangi" />  */}
       
     </div>
   )
